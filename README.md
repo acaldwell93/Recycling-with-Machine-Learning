@@ -2,6 +2,8 @@
 
 ## Building a Convolutional Neural Network for Image Classification
 
+Presentation slides: https://github.com/acaldwell93/capstone_2/blob/main/DSI_capstone_2.pdf
+
 ### The Problem...
 
 According to EPA estimates, approximately 75% of US waste material is recyclable, yet only 30% of it is recycled. The vast majority is simply thrown away, contributing to the exponentially growing global landfill crisis. Among the myriad effects of this crisis are growing greenhouse gas emissions, destruction of wildlife habitat, and pollution of groundwater.
