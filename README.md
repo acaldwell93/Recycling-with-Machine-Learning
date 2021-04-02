@@ -33,9 +33,11 @@ Download: https://www.kaggle.com/asdasdasasdas/garbage-classification
 
 ### Exploring Different Networks
 
+A small sample of the CNNs I tested over course of the project:
+
 ![](readme_images/model_comparisons.png)
 
-A small sample of the CNNs I tested over course of the project
+
 
 #### General architectures / Convolution-Pooling patterns
   Tested a network based on LeNet-5, as well as networks using convolution-pooling and convolution-convolution-pooling patterns
