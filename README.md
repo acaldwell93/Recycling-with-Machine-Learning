@@ -34,6 +34,7 @@ Download: https://www.kaggle.com/asdasdasasdas/garbage-classification
 ### Exploring Different Networks
 
 ![](readme_images/model_comparisons.png)
+
 A small sample of the CNNs I tested over course of the project
 
 #### General architectures / Convolution-Pooling patterns
