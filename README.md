@@ -31,7 +31,7 @@ Download: https://www.kaggle.com/asdasdasasdas/garbage-classification
 
 ### Exploring Different Networks
 
-![readme_images/model_comparisons.png]
+![](readme_images/model_comparisons.png)
 A small sample of the CNNs I tested over course of the project
 
 #### General architectures / Convolution-Pooling patterns
@@ -49,13 +49,13 @@ A small sample of the CNNs I tested over course of the project
  
 ### Assessing Performance
 
-![readme_images/val_scores.png]
+![](readme_images/val_scores.png)
 
 Using Keras’ early stopping callback to restore the best weights of our model as measured by validation loss, we see our model was stopped after 89 epochs, which also corresponded to our highest validation accuracy score of .808.
 
 Testing this model on a holdout dataset, we wind up with a slightly more optimistic accuracy of .89. However, given the small original sample size, this holdout data set was quite small as well. I would be cautious about accepting this higher performance score as a certainty.
 
-![readme_images/cat_report.png]
+![](readme_images/cat_report.png)
 
 Accuracy is important, but what about other metrics? Here is a classification report detailing precision, recall, and f1-scores for each of the 6 classes.
 Precision: True Positives / (True Positives + False Positives)
@@ -64,11 +64,11 @@ F1 score: harmonic mean of precision and sensitivity
 
 ### Visualizing Performance with Confusion Matrix and ROC curve
 
-![readme_images/conf_mat.png]
+![](readme_images/conf_mat.png)
 
 This matrix makes it a little easier to see where the model makes most of its mistakes. In particular, when the object is glass, the model often mistakes it for metal or plastic. The model also mistakes trash for cardboard and metal with relative frequency.
 
-![readme_images/ROC.png]
+![](readme_images/ROC.png)
 
 This multi-class ROC curve is another way of visualizing how well the model performs with respect to each individual class. It could be useful in tuning or selecting a different model should misidentifying a particular class need to be treated more significantly.
 
@@ -76,13 +76,13 @@ This multi-class ROC curve is another way of visualizing how well the model perf
 
 Taking a look at some of the incorrect predictions with the highest probabilities can give valuable insight into how the model will evolve with further training. These “very wrong” guesses will have the largest gradients, and thus, will be what the model most focuses on to minimize the cost function.
  
- ![readme_images/incorrect1.png]
+ ![](readme_images/incorrect1.png)
  
- ![readme_images/incorrect2.png]
+ ![](readme_images/incorrect2.png)
  
- ![readme_images/incorrect3.png]
+ ![](readme_images/incorrect3.png)
  
- ![readme_images/incorrect4.png]
+ ![](readme_images/incorrect4.png)
 
 At a glance, this sample of guesses seems to confirm what our confusion matrix suggested. The model sometimes struggles with identifying the differences between plastic, glass, and metal. The top down view was also a fairly common theme among other, less certain incorrect predictions. The model’s also clearly not ‘discovered’ that styrofoam is trash, not cardboard.
 
